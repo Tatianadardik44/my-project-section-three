@@ -54,6 +54,14 @@ img {
     max-width: 1280px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .advertisement {
+    max-width: 1440px;
+    padding-right: 101px;
+    padding-left: 100px;
+  }
+}
+
 .marquee {
   overflow: hidden;
 }
@@ -121,7 +129,7 @@ img {
 }
 .section-courses {
   max-width: 375px;
-  background-color: black;
+
   padding: 20px;
 }
 
@@ -137,7 +145,11 @@ img {
     padding: 100px;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .section-courses {
+    max-width: 1440px;
+  }
+}
 .course-advertising {
   margin-bottom: 40px;
 }
@@ -191,10 +203,6 @@ img {
     max-width: 405px;
   }
 }
-.courses-conteiner {
-}
-.list-of-courses {
-}
 @media screen and (min-width: 768px) {
   .list-of-courses {
     display: flex;
@@ -230,6 +238,11 @@ img {
     max-width: 347px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .direction-courses {
+    max-width: 400px;
+  }
+}
 .courses-link {
   display: flex;
   justify-content: space-between;
@@ -258,9 +271,6 @@ img {
   background-color: #1d1d1d;
   border-radius: 50%;
 }
-.vector {
-}
-
 .title-direction {
   max-width: 279px;
   color: #fff;
@@ -297,6 +307,11 @@ img {
 
 .section-seven {
   display: flex;
+}
+@media screen and (min-width: 1440px) {
+  .section-seven {
+    max-width: 1440px;
+  }
 }
 @media screen and (min-width: 768px) {
   .conteiner-tabl {
@@ -456,6 +471,7 @@ textarea::placeholder {
   .photo-accessories {
     display: flex;
     align-items: flex-end;
+    margin-left: auto;
   }
 }
 .camera {
