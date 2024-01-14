@@ -12,9 +12,39 @@ ol {
   margin: 0;
   padding-left: 0;
 }
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.container {
+  max-width: 374.98px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: var(--black, #121212);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+.section-ticker.container {
+  padding: 0;
+}
 .section-ticker {
   max-width: 375px;
-  background-color: black;
 }
 @media screen and (min-width: 768px) {
   .section-ticker {
@@ -51,7 +81,7 @@ marquee {
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -257,4 +287,193 @@ marquee {
     line-height: 1.25;
     letter-spacing: -0.32px;
   }
+}
+
+.section-seven {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .conteiner-tabl {
+    max-width: 480px;
+  }
+}
+.title-section-seven {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -1.12px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .title-section-seven {
+    font-size: 48px;
+    line-height: 1.12;
+    letter-spacing: -1.92px;
+  }
+}
+.another-color {
+  color: #bea69e;
+}
+.registration-request {
+  color: #fff;
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.28px;
+  margin-bottom: 41px;
+}
+@media screen and (min-width: 768px) {
+  .registration-request {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.32px;
+    margin-bottom: 40px;
+  }
+}
+.form-sending {
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .fields {
+    gap: 14px;
+  }
+}
+input::placeholder {
+  color: #fff;
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+}
+@media screen and (min-width: 768px) {
+  input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.submission-fields {
+  background-color: transparent;
+  width: 100%;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 18px;
+}
+@media screen and (min-width: 768px) {
+  .submission-fields {
+    height: 60px;
+  }
+}
+.sending-message {
+  background-color: transparent;
+  resize: none;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  padding-top: 14px;
+  padding-left: 18px;
+}
+@media screen and (min-width: 768px) {
+  .sending-message {
+    padding-top: 20px;
+  }
+}
+textarea::placeholder {
+  color: #fff;
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+}
+@media screen and (min-width: 768px) {
+  textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.submission-message {
+}
+.btn-sending {
+  display: flex;
+  width: 100%;
+  padding: 14px 127px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #fff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .btn-sending {
+    padding: 16px 216px;
+  }
+}
+.text-Privacy-Policy {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+}
+@media screen and (min-width: 768px) {
+  .text-Privacy-Policy {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.sending-Privacy-Policy {
+  color: inherit;
+  text-decoration-line: underline;
+}
+.photo-accessories {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .photo-accessories {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.camera {
+  position: relative;
+  width: 180px;
+  height: 288px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: #bea69e;
+  margin: 30px;
+}
+.foto-camera {
+  position: absolute;
+  transform: translateX(-26px);
+  top: 69px;
+}
+.foto-cam {
+  width: 350px;
+  height: 540px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: #1d1d1d;
+  padding-top: 156px;
+  padding-right: 50px;
+  padding-bottom: 88px;
+  padding-left: 50px;
 }
