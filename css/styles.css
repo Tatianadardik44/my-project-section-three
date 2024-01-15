@@ -43,6 +43,8 @@ img {
 .advertisement {
   max-width: 375px;
   padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 @media screen and (min-width: 768px) {
   .advertisement {
